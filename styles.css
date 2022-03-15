@@ -2,20 +2,20 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #header {
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 42px;
     color: #000000;
-    text-align: center;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 8px;
@@ -23,9 +23,14 @@ body {
 }
 
 #intro {
-    width: 500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 75%;
+    margin: 30px;
+}
+
+mark {
+    background-color: #6ba964;
+    color: white;
+    white-space: pre-wrap;
 }
 
 #root {
@@ -35,7 +40,6 @@ body {
 .letters {
     width: 100%;
     display: grid;
-    /* grid-template-columns: 69px 69px 69px 69px 69px; */
     grid-template-columns: auto auto auto auto auto;
     gap: 5px 5px;
     padding-bottom: 10px;
@@ -99,7 +103,6 @@ body {
 .output {
     font-weight: 600;
     font-size: large;
-    text-align: center;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 8px;
