@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#header {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 42px;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#intro {
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#root {
+    width: 360px;
+}
+
+.letters {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 69px 69px 69px 69px 69px; */
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5px 5px;
+    padding-bottom: 10px;
+}
+
+.ltr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: 760;
+    font-size: 32px;
+    color: #ffffff;
+    width: 64px;
+    height: 64px;
+}
+
+/* letter states by color */
+
+.blank {
+    border: 2px solid #d4d6da;
+    color: #000000;
+}
+.black {
+    border: 2px solid #787c7e;
+    background-color: #787c7e;
+}
+.yellow {
+    border: 2px solid #c9b458;
+    background-color: #c9b458;
+}
+.green {
+    border: 2px solid #6ba964;
+    background-color: #6ba964;
+}
+
+/* submit button states */
+
+.submit {
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 13px 0px;
+}
+
+.enabled {
+    background-color: #6ba964;
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: #cfcfcf;
+}
+
+/* output (recommended words) */
+
+.output {
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    white-space: pre-wrap;
+}
