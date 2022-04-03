@@ -58,17 +58,31 @@ class WordList {
     }
 
     update(letters, colors) {
+        let letmap = new Array(26).fill(0);
+        for (let i = 0; i < 5; i++) {
+            letmap[letters[i].charCodeAt(0) - 97]++;
+        }
         for (let i = 0; i < 5; i++) {
             let s = letters[i];
             let int = colors[i];
-            if (int == 0) { // black
-                this.words = this.words.filter(word => (!word.letters.includes(s)
-                    || word.letters.indexOf(s) < i)); // accounts for double letter
-            } else if (int == 1) { // yellow
+            let duplicatePresent = false;
+            if (int == 1) { // yellow
                 this.words = this.words.filter(word => word.letters.includes(s));
                 this.words = this.words.filter(word => word.letters[i] != s);
-            } else { // green
+                if (letmap[letters[i].charAt(0) - 97] > 0) {
+                    duplicatePresent = true;
+                }
+            } else if (int == 2) { // green
                 this.words = this.words.filter(word => word.letters[i] == s);
+                if (letmap[letters[i].charAt(0) - 97] > 0) {
+                    duplicatePresent = true;
+                }
+            } else { // black
+                if (letmap[letters[i].charCodeAt(0) - 97] > 0 && duplicatePresent) {
+                    this.words = this.words.filter(word => (word.letters[i] != s));
+                } else {
+                    this.words = this.words.filter(word => (!word.letters.includes(s)));
+                }
             }
         }
     }
