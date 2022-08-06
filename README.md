@@ -1,6 +1,6 @@
 # Introduction
 
-This is a website that solves [Wordles](https://www.nytimes.com/games/wordle/index.html) algorithmically. You can visit the website [here](http://wordle-solver.xyz/). Simply type in your guess, click on each letter to signal the corresponding color, and press "Submit" to see the list of possible answers shrink, as well as the top five suggestions for your next guess.
+This is a website that solves [Wordles](https://www.nytimes.com/games/wordle/index.html) algorithmically. You can visit the website [here](https://viafzal.github.io/wordle-solver/). Simply type in your guess, click on each letter to signal the corresponding color, and press "Submit" to see the list of possible answers shrink, as well as the top five suggestions for your next guess.
 
 This project began as a simple tool to help my German friend learn English (or play Wordle, depending on your perspective). She loves playing Wordle in German, but wanted to match my English Wordle scores. Her limited vocabulary made it difficult to guess correct words, so I created this project to help her learn common English words (which the solver pushes as the top suggestions). Now, we're neck and neck for Wordle wins.
 
